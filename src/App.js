@@ -4,11 +4,63 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
+import Chip from "@mui/material/Chip";
 import { Button } from "@mui/material";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { setActiveLink } from "react-scroll/modules/mixins/scroller";
 import { useState } from "react";
 import { getPath } from "@mui/system";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { createTheme } from "@mui/material/styles";
+import Backdrop from "@mui/material/Backdrop";
+import SpeedDial from "@mui/material/SpeedDial";
+import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
+import HomeIcon from "@mui/icons-material/HomeOutlined";
+import AboutIcon from "@mui/icons-material/PersonOutline";
+import WorkIcon from "@mui/icons-material/WorkOutlineOutlined";
+import EducationIcon from "@mui/icons-material/SchoolOutlined";
+import ProjectsIcon from "@mui/icons-material/Code";
+import SkillsIcon from "@mui/icons-material/PsychologyOutlined";
+
+const actions = [
+  { icon: <HomeIcon />, name: "Home" },
+  { icon: <AboutIcon />, name: "About Me" },
+  { icon: <WorkIcon />, name: "Work Experience" },
+  { icon: <SkillsIcon />, name: "Technical Skills" },
+  { icon: <EducationIcon />, name: "Education" },
+  { icon: <ProjectsIcon />, name: "Projects" },
+];
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#0971f1",
+      darker: "#053e85",
+    },
+    neutral: {
+      main: "#64748B",
+      contrastText: "#fff",
+    },
+  },
+});
+
+//import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+// import {
+//   faYoutube,
+//   faFacebook,
+//   faTwitter,
+//   faInstagram,
+//   faGithub,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons";
+
+// const theme = createTheme({
+//   palette: {
+//     primary: "#00bcd4",
+//     secondary: "#ff4081",
+//   },
+// });
 
 function App() {
   const [isActive, setIsActive] = useState("#Home");
@@ -17,6 +69,30 @@ function App() {
   return (
     <div className="body">
       <Box>
+        <Box
+          sx={{
+            height: 75,
+            width: 75,
+            transform: "translateZ(0px)",
+            flexGrow: 1,
+            display: { xs: "block", sm: "block", md: "none" },
+          }}
+        >
+          <SpeedDial
+            ariaLabel="SpeedDial basic example"
+            sx={{ position: "absolute", top: 16, left: 16 }}
+            icon={<SpeedDialIcon />}
+            direction="down"
+          >
+            {actions.map((action) => (
+              <SpeedDialAction
+                key={action.name}
+                icon={action.icon}
+                tooltipTitle={action.name}
+              />
+            ))}
+          </SpeedDial>
+        </Box>
         <Grid
           id="Everything"
           container
@@ -28,17 +104,33 @@ function App() {
             item
             xs={12}
             sm={12}
-            md={2}
-            lg={2}
+            md={3}
+            lg={3}
             className="grid-column"
-          ></Grid>
+            sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+          >
+            {/* <a
+              href="https://github.com/quinnhipp"
+              className="github social"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/quinnlanhipp/"
+              className="linkedin social"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a> */}
+          </Grid>
           <Grid
             id="Body"
             item
             xs={12}
             sm={12}
-            md={8}
-            lg={8}
+            md={6}
+            lg={6}
             className="grid-column"
           >
             <Grid id="Home" className="App-header">
@@ -97,16 +189,67 @@ function App() {
                 implementation to a production environment.
               </p>
             </Grid>
-
-            <Grid id="Education" className="App-header">
-              <p>
-                Hello, my name is <span className="special-text">Quinn</span>.
-              </p>
+            <Grid id="TechnicalSkills" className="Work-container">
+              <h2 className="special-text header-text">Technical Skills</h2>
+              <Grid id="ChipGrid" className="Chip-Grid special-text">
+                <Chip label="ReactJS" variant="outlined" />
+                <Chip label="Assembly" variant="outlined" />
+                <Chip label="C" variant="outlined" />
+                <Chip label="C#" variant="outlined" />
+                <Chip label="C++" variant="outlined" />
+                <Chip label="Java" variant="outlined" />
+                <Chip label="JavaScript" variant="outlined" />
+                <Chip label="VB.net" variant="outlined" />
+                <Chip label="HTML" variant="outlined" />
+                <Chip label="ASP.net" variant="outlined" />
+                <Chip label="CSS" variant="outlined" />
+              </Grid>
+              <ul className="text">
+                <li>ReactJS</li>
+                <li>Automated Testing/Cypress.io</li>
+                <li>Familiar with Github subversion</li>
+                <li>
+                  Translating technical jargon to non-developer stakeholders
+                </li>
+                <li>Excellent communication skills</li>
+                <li>Advanced problem solving</li> <li>Extremely coachable</li>
+                <li>Thrives in a team environment</li>
+              </ul>
             </Grid>
 
-            <Grid id="Projects" className="App-header">
+            <Grid id="Education" className="Work-container">
+              <h2 className="special-text header-text">Education</h2>
+              <a href="http://utoledo.edu" className="link large-text">
+                University of Toledo
+              </a>
+              <h3>
+                <i>Bachelor of Science: Computer Science and Engineering</i>
+              </h3>
+              <p className="text"> Anticipated graduation: December 2022.</p>
+              <br />
+              <p className="text">President's List: Summer 2020</p>
+              <p className="text">Dean's List: Spring 2021</p>
+            </Grid>
+
+            <Grid id="Projects" className="Work-container">
+              <h2 className="special-text header-text">Projects</h2>
+
               <p>
-                Hello, my name is <span className="special-text">Quinn</span>.
+                <a
+                  href="https://github.com/quinnhipp/Multithreading-Applications"
+                  target={"_blank"}
+                  className="link"
+                >
+                  <strong>Multithreading-Applications</strong>
+                </a>
+                <br />
+                <a
+                  href="https://github.com/quinnhipp/FAT32"
+                  target={"_blank"}
+                  className="link"
+                >
+                  <strong>FAT32</strong>
+                </a>
               </p>
             </Grid>
           </Grid>
@@ -115,10 +258,11 @@ function App() {
             item
             xs={12}
             sm={12}
-            md={2}
-            lg={2}
+            md={3}
+            lg={3}
             className="grid-column"
             textAlign={"right"}
+            sx={{ display: { xs: "none", sm: "none", md: "block" } }}
           >
             <a
               href="#Home"
@@ -146,6 +290,17 @@ function App() {
               onClick={() => setIsActive("#Work")}
             >
               Work Experience
+            </a>
+            <br />
+            <br />
+            <a
+              href="#TechnicalSkills"
+              className={
+                isActive === "#Skills" ? "nav-link-active" : "nav-link"
+              }
+              onClick={() => setIsActive("#Skills")}
+            >
+              Technical Skills
             </a>
             <br />
             <br />
