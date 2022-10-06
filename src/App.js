@@ -24,12 +24,12 @@ import ProjectsIcon from "@mui/icons-material/Code";
 import SkillsIcon from "@mui/icons-material/PsychologyOutlined";
 
 const actions = [
-  { icon: <HomeIcon />, name: "Home" },
-  { icon: <AboutIcon />, name: "About Me" },
-  { icon: <WorkIcon />, name: "Work Experience" },
-  { icon: <SkillsIcon />, name: "Technical Skills" },
-  { icon: <EducationIcon />, name: "Education" },
-  { icon: <ProjectsIcon />, name: "Projects" },
+  { icon: <HomeIcon />, name: "Home", href: "#Home" },
+  { icon: <AboutIcon />, name: "About Me", href: "#AboutMe" },
+  { icon: <WorkIcon />, name: "Work Experience", href: "#WorkExperience" },
+  { icon: <SkillsIcon />, name: "Technical Skills", href: "#TechnicalSkills" },
+  { icon: <EducationIcon />, name: "Education", href: "#Education" },
+  { icon: <ProjectsIcon />, name: "Projects", href: "#Projects" },
 ];
 
 const theme = createTheme({
@@ -45,7 +45,7 @@ const theme = createTheme({
   },
 });
 
-//import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+// import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 // import {
 //   faYoutube,
 //   faFacebook,
@@ -76,6 +76,7 @@ function App() {
             transform: "translateZ(0px)",
             flexGrow: 1,
             display: { xs: "block", sm: "block", md: "none" },
+            position: "fixed",
           }}
         >
           <SpeedDial
@@ -89,6 +90,7 @@ function App() {
                 key={action.name}
                 icon={action.icon}
                 tooltipTitle={action.name}
+                href={action.href}
               />
             ))}
           </SpeedDial>
@@ -192,29 +194,42 @@ function App() {
             <Grid id="TechnicalSkills" className="Work-container">
               <h2 className="special-text header-text">Technical Skills</h2>
               <Grid id="ChipGrid" className="Chip-Grid special-text">
-                <Chip label="ReactJS" variant="outlined" />
-                <Chip label="Assembly" variant="outlined" />
-                <Chip label="C" variant="outlined" />
-                <Chip label="C#" variant="outlined" />
-                <Chip label="C++" variant="outlined" />
-                <Chip label="Java" variant="outlined" />
-                <Chip label="JavaScript" variant="outlined" />
-                <Chip label="VB.net" variant="outlined" />
-                <Chip label="HTML" variant="outlined" />
-                <Chip label="ASP.net" variant="outlined" />
-                <Chip label="CSS" variant="outlined" />
+                <Chip label="ReactJS" variant="outlined" color="primary" />
+                <Chip label="Assembly" variant="outlined" color="primary" />
+                <Chip label="C" variant="outlined" color="primary" />
+                <Chip label="C#" variant="outlined" color="primary" />
+                <Chip label="C++" variant="outlined" color="primary" />
+                <Chip label="Java" variant="outlined" color="primary" />
+                <Chip label="JavaScript" variant="outlined" color="primary" />
+                <Chip label="VB.net" variant="outlined" color="primary" />
+                <Chip label="HTML" variant="outlined" color="primary" />
+                <Chip label="ASP.net" variant="outlined" color="primary" />
+                <Chip label="CSS" variant="outlined" color="primary" />
               </Grid>
-              <ul className="text">
-                <li>ReactJS</li>
-                <li>Automated Testing/Cypress.io</li>
-                <li>Familiar with Github subversion</li>
-                <li>
-                  Translating technical jargon to non-developer stakeholders
-                </li>
-                <li>Excellent communication skills</li>
-                <li>Advanced problem solving</li> <li>Extremely coachable</li>
-                <li>Thrives in a team environment</li>
-              </ul>
+              <p className="text">
+                ReactJS
+                <br />
+                <br />
+                Automated Testing/Cypress.io
+                <br />
+                <br />
+                Familiar with Github subversion
+                <br />
+                <br />
+                Translating technical jargon to non-developer stakeholders
+                <br />
+                <br />
+                Excellent communication skills
+                <br />
+                <br />
+                Advanced problem solving
+                <br />
+                <br />
+                Extremely coachable
+                <br />
+                <br />
+                Thrives in a team environment
+              </p>
             </Grid>
 
             <Grid id="Education" className="Work-container">

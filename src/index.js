@@ -1,10 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+//import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+//import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const theme = createMuiTheme({
+//   palette: {
+//     primary: {
+//       main: "#ff8f00", // This is an orange looking color
+//     },
+//     secondary: {
+//       main: "#ffcc80", //Another orange-ish color
+//     },
+//   },
+//   //fontFamily: font, // as an aside, highly recommend importing roboto font for Material UI projects! Looks really nice
+// });
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
