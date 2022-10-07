@@ -8,6 +8,7 @@ export default function () {
       <p>
         <a
           href="https://github.com/quinnhipp/Multithreading-Applications"
+          rel="noreferrer"
           target={"_blank"}
           className="link"
         >
@@ -16,6 +17,7 @@ export default function () {
         <br />
         <a
           href="https://github.com/quinnhipp/FAT32"
+          rel="noreferrer"
           target={"_blank"}
           className="link"
         >

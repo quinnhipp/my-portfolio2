@@ -60,6 +60,15 @@
 
 .grid-container {
   height: calc(100% - 64px);
+
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide scrollbar for chrome, safari and opera */
+.grid-container::-webkit-scrollbar {
+  display: none;
 }
 
 .grid-column {

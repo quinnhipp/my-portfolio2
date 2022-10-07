@@ -5,7 +5,12 @@ export default function () {
     <Grid id="WorkExperience" className="Work-container">
       <h2 className="special-text header-text">Work Experience</h2>
       <br />
-      <a href="https://cloud-cme.com" target={"_blank"} className="link">
+      <a
+        href="https://cloud-cme.com"
+        rel="noreferrer"
+        target={"_blank"}
+        className="link"
+      >
         <strong>CLOUDCME</strong>
       </a>
       <span className="special-text text">

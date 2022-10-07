@@ -10,7 +10,7 @@ export default function () {
       <h3>
         <i>Bachelor of Science: Computer Science and Engineering</i>
       </h3>
-      <p className="text"> Anticipated graduation: December 2022.</p>
+      <p className="text"> Graduation Date: December 2022.</p>
       <br />
       <p className="text">President's List: Summer 2020</p>
       <p className="text">Dean's List: Spring 2021</p>
