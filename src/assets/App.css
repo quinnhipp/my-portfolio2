@@ -148,6 +148,37 @@ a.link:hover {
   text-align: right;
 }
 
+.project-list {
+  text-align: center;
+  display: flex;
+  align-content: space-between;
+}
+
+.project-preview {
+  width: 45%;
+  border: 3px, solid, white;
+  padding: 10px;
+  color: black;
+  font-size: 12pt;
+  text-align: left;
+  background-color: white;
+  margin: auto;
+  border-style: double;
+  border-color: #92a8d1;
+  border-width: 5px;
+  border-radius: 2rem;
+}
+
+.project-preview:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 5px rgb(201, 199, 199);
+}
+
+.project-image {
+  border-radius: 25%;
+  overflow: hidden;
+}
+
 a.social {
   margin: 0 1rem;
   transition: transform 250ms;
