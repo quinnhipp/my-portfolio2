@@ -6,17 +6,52 @@ export default function () {
     <Grid id="TechnicalSkills" className="Work-container">
       <h2 className="special-text header-text">Technical Skills</h2>
       <Grid id="ChipGrid" className="Chip-Grid special-text">
-        <Chip label="ReactJS" variant="outlined" color="primary" />
-        <Chip label="Assembly" variant="outlined" color="primary" />
-        <Chip label="C" variant="outlined" color="primary" />
-        <Chip label="C#" variant="outlined" color="primary" />
-        <Chip label="C++" variant="outlined" color="primary" />
-        <Chip label="Java" variant="outlined" color="primary" />
-        <Chip label="JavaScript" variant="outlined" color="primary" />
-        <Chip label="VB.net" variant="outlined" color="primary" />
-        <Chip label="HTML" variant="outlined" color="primary" />
-        <Chip label="ASP.net" variant="outlined" color="primary" />
-        <Chip label="CSS" variant="outlined" color="primary" />
+        <Chip
+          label="ReactJS"
+          variant="outlined"
+          color="primary"
+          className="chip"
+        />
+        <Chip
+          label="Assembly"
+          variant="outlined"
+          color="primary"
+          className="chip"
+        />
+        <Chip label="C" variant="outlined" color="primary" className="chip" />
+        <Chip label="C#" variant="outlined" color="primary" className="chip" />
+        <Chip label="C++" variant="outlined" color="primary" className="chip" />
+        <Chip
+          label="Java"
+          variant="outlined"
+          color="primary"
+          className="chip"
+        />
+        <Chip
+          label="JavaScript"
+          variant="outlined"
+          color="primary"
+          className="chip"
+        />
+        <Chip
+          label="VB.net"
+          variant="outlined"
+          color="primary"
+          className="chip"
+        />
+        <Chip
+          label="HTML"
+          variant="outlined"
+          color="primary"
+          className="chip"
+        />
+        <Chip
+          label="ASP.net"
+          variant="outlined"
+          color="primary"
+          className="chip"
+        />
+        <Chip label="CSS" variant="outlined" color="primary" className="chip" />
       </Grid>
       <p className="text">
         ReactJS

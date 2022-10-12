@@ -7,6 +7,7 @@ import Work from "./pages/work";
 import Skills from "./pages/skills";
 import Education from "./pages/education";
 import Projects from "./pages/projects";
+import References from "./pages/references";
 import RightNav from "./layouts/rightNav";
 import LeftSocials from "./layouts/leftSocials";
 import MenuDial from "./layouts/menuDial";
@@ -39,6 +40,7 @@ function App() {
             <Skills />
             <Education />
             <Projects />
+            <References />
             <BottomSocials />
           </Grid>
           <RightNav />

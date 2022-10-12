@@ -11,7 +11,6 @@ export default function () {
       sm={12}
       md={3}
       lg={3}
-      className="grid-column"
       sx={{ display: { xs: "none", sm: "none", md: "block" } }}
     >
       <a

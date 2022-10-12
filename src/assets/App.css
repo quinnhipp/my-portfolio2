@@ -27,7 +27,6 @@
 
 .App-header {
   background-color: black;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +37,6 @@
 
 .Work-container {
   background-color: black;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -71,6 +69,10 @@
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .grid-column {
   height: 100vh;
   overflow-y: auto;
@@ -83,11 +85,23 @@
   justify-content: center;
 }
 
+.chip:hover {
+  background: linear-gradient(
+    -70deg,
+    #ff8a30,
+    #f9c906
+  );
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+  background-clip: text;
+  color: transparent;
+}
+
 a.link {
   background: linear-gradient(
     -70deg,
-    #a2facf,
-    #64acff
+    #ff8a30,
+    #f9c906
   );
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;
@@ -117,8 +131,8 @@ a.link:hover {
 .nav-link-active {
   background: linear-gradient(
     -70deg,
-    #a2facf,
-    #64acff
+    #ff8a30,
+    #f9c906
   );
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;
@@ -131,11 +145,15 @@ a.link:hover {
   font-size: 5rem;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .special-text {
   background: linear-gradient(
     -70deg,
-    #a2facf,
-    #64acff
+    #ff8a30,
+    #f9c906
   );
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;
@@ -155,9 +173,9 @@ a.link:hover {
 }
 
 .project-preview {
-  width: 45%;
   border: 3px, solid, white;
   padding: 10px;
+  margin: 15px;
   color: black;
   font-size: 12pt;
   text-align: left;
