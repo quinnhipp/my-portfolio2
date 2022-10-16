@@ -73,6 +73,14 @@
   width: 0px;
 }
 
+.circle-portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-width: 3;
+  overflow: hidden;
+}
+
 .grid-column {
   height: 100vh;
   overflow-y: auto;
@@ -166,13 +174,13 @@ a.link:hover {
   text-align: right;
 }
 
-.project-list {
+.preview-list {
   text-align: center;
   display: flex;
   align-content: space-between;
 }
 
-.project-preview {
+.preview {
   border: 3px, solid, white;
   padding: 10px;
   margin: 15px;
@@ -187,14 +195,18 @@ a.link:hover {
   border-radius: 2rem;
 }
 
-.project-preview:hover {
+.preview:hover {
   transform: scale(1.01);
   box-shadow: 5px 5px 5px rgb(201, 199, 199);
 }
 
-.project-image {
+.preview-image {
   border-radius: 25%;
   overflow: hidden;
+}
+
+.preview-button {
+
 }
 
 a.social {

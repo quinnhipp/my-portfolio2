@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import { useState } from "react";
-import ProjectList from "../components/projectContainer";
+import PreviewList from "../components/previewContainer";
 import BitmojiLaptop from "../assets/Quinn_Laptop_High.png";
 import FlashDrive from "../assets/Flash-Drive.png";
 import Multithreading from "../assets/Multithreading.jpeg";
@@ -13,6 +13,7 @@ export default function () {
       link: "https://github.com/quinnhipp/Multithreading-Applications",
       description:
         "Implementation of POSIX-Pthreads to multi-thread Quicksort for sorting huge lists.",
+      buttonText: "View on Github",
       id: 1,
     },
     {
@@ -20,6 +21,7 @@ export default function () {
       title: "FAT32",
       link: "https://github.com/quinnhipp/FAT32",
       description: "Created a FAT32 structure from scratch in Linux",
+      buttonText: "View on Github",
       id: 2,
     },
   ]);
@@ -27,7 +29,7 @@ export default function () {
   return (
     <Grid id="Projects" className="Work-container">
       <h2 className="special-text header-text">Projects</h2>
-      <ProjectList projects={projects} />
+      <PreviewList projects={projects} />
     </Grid>
   );
 }
