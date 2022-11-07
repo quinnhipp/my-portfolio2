@@ -76,6 +76,15 @@ export default function () {
       >
         References
       </a>
+      <br />
+      <br />
+      <a
+        href="#Contact"
+        className={isActive === "#Contact" ? "nav-link-active" : "nav-link"}
+        onClick={() => setIsActive("#Contact")}
+      >
+        Contact
+      </a>
     </Grid>
   );
 }

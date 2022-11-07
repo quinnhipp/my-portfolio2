@@ -8,6 +8,7 @@ import WorkIcon from "@mui/icons-material/WorkOutlineOutlined";
 import EducationIcon from "@mui/icons-material/SchoolOutlined";
 import ProjectsIcon from "@mui/icons-material/Code";
 import SkillsIcon from "@mui/icons-material/PsychologyOutlined";
+import ContactIcon from "@mui/icons-material/ContactMailOutlined";
 
 const actions = [
   { icon: <HomeIcon />, name: "Home", href: "#Home" },
@@ -16,6 +17,7 @@ const actions = [
   { icon: <SkillsIcon />, name: "Technical Skills", href: "#TechnicalSkills" },
   { icon: <EducationIcon />, name: "Education", href: "#Education" },
   { icon: <ProjectsIcon />, name: "Projects", href: "#Projects" },
+  { icon: <ContactIcon />, name: "Contact", href: "#Contact" },
 ];
 
 export default function () {

@@ -3,7 +3,13 @@ import Button from "@mui/material/Button";
 
 const PreviewList = ({ projects }) => {
   return (
-    <Grid id="previewList" className="preview-list" container>
+    <Grid
+      id="previewList"
+      className="preview-list"
+      container
+      columnGap={2}
+      rowGap={2}
+    >
       {projects.map((project) => (
         <Grid
           id="preview"
@@ -18,7 +24,12 @@ const PreviewList = ({ projects }) => {
           <img src={project.image} width="100%" className="preview-image" />
           <h2>{project.title}</h2>
           <p>{project.description}</p>
-          <Button variant="outlined" href={project.link} target="_blank">
+          <Button
+            variant="contained"
+            href={project.link}
+            target="_blank"
+            color="inherit"
+          >
             {project.buttonText}
           </Button>
         </Grid>

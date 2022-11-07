@@ -43,6 +43,7 @@
   justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 50px;
 }
 
 .Apps-header {
@@ -71,6 +72,21 @@
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.page-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+  padding: 10px;
+}
+
+Form {
+  width: 50%;
 }
 
 .circle-portrait {
@@ -193,6 +209,7 @@ a.link:hover {
   border-color: #92a8d1;
   border-width: 5px;
   border-radius: 2rem;
+  transition: all linear .15s;
 }
 
 .preview:hover {
@@ -206,7 +223,9 @@ a.link:hover {
 }
 
 .preview-button {
+}
 
+.preview-button:hover {
 }
 
 a.social {

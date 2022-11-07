@@ -1,6 +1,5 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import BitmojiLaptop from "../assets/Quinn_Laptop2.gif";
-import SelfPortrait from "../assets/Quinn_Portrait.jpeg";
 
 export default function () {
   return (
