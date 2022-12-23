@@ -1,5 +1,6 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import { useState } from "react";
+//import { createTheme } from "@mui/material/styles";
 
 export default function () {
   const [isActive, setIsActive] = useState("#Home");
@@ -14,6 +15,7 @@ export default function () {
       lg={3}
       textAlign={"right"}
       sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+      className="nav-text"
     >
       <a
         href="#Home"

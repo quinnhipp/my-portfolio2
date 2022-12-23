@@ -9,10 +9,12 @@ export default function () {
   const [projects, setProjects] = useState([
     {
       image: BitmojiLaptop,
-      title: "My Portfolio",
+      title: "My CV",
       link: "https://qhipp.dev",
       description: "Web site created in React to display my portfolio",
-      buttonText: "View Site",
+      buttonText: "",
+      className: "hide-button",
+      isDisabled: true,
       id: 1,
     },
     {

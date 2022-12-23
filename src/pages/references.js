@@ -21,7 +21,9 @@ export default function () {
       link: "https://drive.google.com/file/d/1kSnj886qJl5Zk13rcdc6zI09tGcxcRxf/view?usp=sharing",
       description:
         '"After over a year of working with Quinn I must say he is a highly motivated and driven developer that I see a lot of potential in. As his mentor I saw someone who was driven and had an appetite for learning new things. He is kind and respectful to his co-workers and has a great sense of humor. I see a lot of potential in Quinn and think he will be a great fit for any software development team."',
-      buttonText: "View Full Reference",
+      buttonText: "",
+      className: "hide-button",
+      isDisabled: true,
       id: 2,
     },
   ]);

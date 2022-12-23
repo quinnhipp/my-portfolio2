@@ -87,7 +87,15 @@
 }
 
 Form {
-  width: 50%;
+  width: 100%;
+}
+
+.stick {
+  position: sticky;
+}
+
+.hide-button {
+  opacity: 0;
 }
 
 .circle-portrait {
@@ -151,6 +159,7 @@ a.link:hover {
   text-decoration: none;
   color: white;
   text-align: right;
+  font-size: large;
 }
 
 .nav-link-active {
@@ -164,6 +173,7 @@ a.link:hover {
   background-clip: text;
   color: transparent;
   text-align: right;
+  font-size: x-large;
 }
 
 .large-text {

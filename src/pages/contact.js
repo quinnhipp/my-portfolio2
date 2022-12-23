@@ -32,37 +32,44 @@ export default function () {
   return (
     <Grid id="Contact" className="work-container">
       <h2 className="special-text header-text">Contact</h2>
-      <Form onSubmit={handleOnSubmit}>
-        <Form.Field
-          id="form-input-control-email"
-          control={Input}
-          label="Email"
-          name="from_email"
-          placeholder="Email…"
-          required
-          icon="mail"
-          iconPosition="left"
-        />
-        <Form.Field
-          id="form-input-control-last-name"
-          control={Input}
-          label="Name"
-          name="from_name"
-          placeholder="Name…"
-          required
-          icon="user circle"
-          iconPosition="left"
-        />
-        <Form.Field
-          id="form-textarea-control-opinion"
-          control={TextArea}
-          label="Message"
-          name="message"
-          placeholder="Message…"
-          required
-        />
-        <Button type="submit">Submit</Button>
-      </Form>
+      <Grid container columnGap={6}>
+        <Grid item xs={11} sm={11} md={7} lg={7}>
+          <Form onSubmit={handleOnSubmit}>
+            <Form.Field
+              id="form-input-control-email"
+              control={Input}
+              label="Email"
+              name="from_email"
+              placeholder="Email…"
+              required
+              icon="mail"
+              iconPosition="left"
+            />
+            <Form.Field
+              id="form-input-control-last-name"
+              control={Input}
+              label="Name"
+              name="from_name"
+              placeholder="Name…"
+              required
+              icon="user circle"
+              iconPosition="left"
+            />
+            <Form.Field
+              id="form-textarea-control-opinion"
+              control={TextArea}
+              label="Message"
+              name="message"
+              placeholder="Message…"
+              required
+            />
+            <Button type="submit">Submit</Button>
+          </Form>
+        </Grid>
+        <Grid item xs={11} sm={11} md={4} lg={4} className="special-text text">
+          Email: quinnhipp1@gmail.com
+        </Grid>
+      </Grid>
     </Grid>
   );
 }

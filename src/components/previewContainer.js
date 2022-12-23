@@ -1,5 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
+import { Hidden } from "@mui/material";
 
 const PreviewList = ({ projects }) => {
   return (
@@ -29,6 +30,8 @@ const PreviewList = ({ projects }) => {
             href={project.link}
             target="_blank"
             color="inherit"
+            className={project.className}
+            disabled={project.isDisabled}
           >
             {project.buttonText}
           </Button>

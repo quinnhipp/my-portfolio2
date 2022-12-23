@@ -7,9 +7,9 @@ export default function () {
       <br />
 
       <p>
-        I am currently a senior at the University of Toledo majoring in{" "}
-        <span className="special-text">Computer Science and Engineering</span>{" "}
-        in search of a full-time position starting in January 2023.
+        I am recent graduate of the University of Toledo with a major in{" "}
+        <span className="special-text">Computer Science and Engineering.</span>{" "}
+        I am in search of a full-time software developer position.
       </p>
     </Grid>
   );

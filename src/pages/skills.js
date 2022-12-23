@@ -5,7 +5,11 @@ export default function () {
   return (
     <Grid id="TechnicalSkills" className="Work-container">
       <h2 className="special-text header-text">Technical Skills</h2>
-      <Grid id="ChipGrid" className="Chip-Grid special-text">
+      <Grid
+        id="ChipGrid"
+        className="Chip-Grid special-text"
+        marginBottom={"15px"}
+      >
         <Chip
           label="ReactJS"
           variant="outlined"

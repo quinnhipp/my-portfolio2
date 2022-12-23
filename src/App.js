@@ -13,6 +13,7 @@ import RightNav from "./layouts/rightNav";
 import LeftSocials from "./layouts/leftSocials";
 import MenuDial from "./layouts/menuDial";
 import BottomSocials from "./layouts/bottomSocials";
+import { Container } from "semantic-ui-react";
 
 function App() {
   return (
@@ -28,12 +29,12 @@ function App() {
           <LeftSocials />
           <Grid
             id="Pages"
-            item
             xs={12}
             sm={12}
             md={6}
             lg={6}
             className="grid-column"
+            item
           >
             <Home />
             <About />
