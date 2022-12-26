@@ -142,6 +142,7 @@ a.link {
   color: transparent;
   font-size: 1.5rem;
   font-weight: 900;
+  width: fit-content;
 }
 
 a.link:hover {
