@@ -37,7 +37,16 @@ export default function () {
   ]);
 
   return (
-    <Grid id="Projects" className="Work-container">
+    <Grid
+      id="Projects"
+      className="Work-container"
+      xs={12}
+      sm={12}
+      md={7}
+      lg={7}
+      mdoffset={2.5}
+      lgoffset={2.5}
+    >
       <h2 className="special-text header-text">Projects</h2>
       <PreviewList projects={projects} />
     </Grid>

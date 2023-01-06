@@ -17,7 +17,7 @@ const actions = [
   { icon: <SkillsIcon />, name: "Technical Skills", href: "#TechnicalSkills" },
   { icon: <EducationIcon />, name: "Education", href: "#Education" },
   { icon: <ProjectsIcon />, name: "Projects", href: "#Projects" },
-  { icon: <ContactIcon />, name: "Contact", href: "#Contact" },
+  { icon: <ContactIcon />, name: "References", href: "#References" },
 ];
 
 export default function () {

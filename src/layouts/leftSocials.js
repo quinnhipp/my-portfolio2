@@ -7,11 +7,11 @@ export default function () {
     <Grid
       id="LeftSide"
       item
-      xs={12}
-      sm={12}
       md={3}
       lg={3}
       sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+      className="right-nav"
+      left={0}
     >
       <a
         href="https://github.com/quinnhipp"

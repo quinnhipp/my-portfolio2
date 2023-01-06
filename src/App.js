@@ -24,29 +24,19 @@ function App() {
           id="Everything"
           container
           justifyContent={"center"}
-          className="grid-container"
+          className="grid-container grid-column"
         >
           <LeftSocials />
-          <Grid
-            id="Pages"
-            xs={12}
-            sm={12}
-            md={6}
-            lg={6}
-            className="grid-column"
-            item
-          >
-            <Home />
-            <About />
-            <Work />
-            <Skills />
-            <Education />
-            <Projects />
-            <References />
-            <Contact />
-            <BottomSocials />
-          </Grid>
           <RightNav />
+          <Home />
+          <About />
+          <Work />
+          <Skills />
+          <Education />
+          <Projects />
+          <References />
+          {/* <Contact /> */}
+          <BottomSocials />
         </Grid>
       </Box>
     </div>
