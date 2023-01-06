@@ -9,13 +9,12 @@ export default function () {
     <Grid
       id="RightSide"
       item
-      xs={12}
-      sm={12}
       md={3}
       lg={3}
       textAlign={"right"}
       sx={{ display: { xs: "none", sm: "none", md: "block" } }}
-      className="nav-text"
+      className="right-nav"
+      right={0}
     >
       <a
         href="#Home"
@@ -78,7 +77,7 @@ export default function () {
       >
         References
       </a>
-      <br />
+      {/* <br />
       <br />
       <a
         href="#Contact"
@@ -86,7 +85,7 @@ export default function () {
         onClick={() => setIsActive("#Contact")}
       >
         Contact
-      </a>
+      </a> */}
     </Grid>
   );
 }

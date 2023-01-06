@@ -110,7 +110,6 @@ Form {
   height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth;
-  background-color: black;
 }
 
 .Chip-Grid {
@@ -177,6 +176,11 @@ a.link:hover {
   font-size: x-large;
 }
 
+.right-nav {
+  position: fixed;
+  margin-right: 20px;
+}
+
 .large-text {
   font-size: 5rem;
 }
@@ -232,12 +236,6 @@ a.link:hover {
 .preview-image {
   border-radius: 25%;
   overflow: hidden;
-}
-
-.preview-button {
-}
-
-.preview-button:hover {
 }
 
 a.social {
