@@ -6,12 +6,8 @@ export default function () {
   const [isActive, setIsActive] = useState("#Home");
   const hash = window.location.hash;
   return (
-    <Grid
+    <div
       id="RightSide"
-      item
-      md={3}
-      lg={3}
-      textAlign={"right"}
       sx={{ display: { xs: "none", sm: "none", md: "block" } }}
       className="right-nav"
       right={0}
@@ -86,6 +82,6 @@ export default function () {
       >
         Contact
       </a> */}
-    </Grid>
+    </div>
   );
 }

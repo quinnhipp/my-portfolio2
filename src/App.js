@@ -14,8 +14,22 @@ import LeftSocials from "./layouts/leftSocials";
 import MenuDial from "./layouts/menuDial";
 import BottomSocials from "./layouts/bottomSocials";
 import { Container } from "semantic-ui-react";
+import { useEffect } from "react";
 
 function App() {
+  // document.getElementById("RightSide").addEventListener("wheel", function (e) {
+  //   e.preventDefault();
+  //   document.getElementById("Everything").scrollTop += e.deltaY * 10;
+  // });
+
+  // var el = document.getElementById("RightSide");
+  // if (el) {
+  //   el.addEventListener("wheel", function (e) {
+  //     e.preventDefault();
+  //     document.getElementById("Everything").scrollTop += e.deltaY * 10;
+  //   });
+  // }
+
   return (
     <div className="body">
       <Box>

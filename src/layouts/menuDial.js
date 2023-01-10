@@ -34,7 +34,7 @@ export default function () {
     >
       <SpeedDial
         ariaLabel="SpeedDial basic example"
-        sx={{ position: "absolute", top: 16, left: 16 }}
+        sx={{ position: "absolute", top: 5, left: 5 }}
         icon={<SpeedDialIcon />}
         direction="down"
       >

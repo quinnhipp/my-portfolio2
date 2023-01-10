@@ -4,13 +4,9 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function () {
   return (
-    <Grid
+    <div
       id="LeftSide"
-      item
-      md={3}
-      lg={3}
       sx={{ display: { xs: "none", sm: "none", md: "block" } }}
-      className="right-nav"
       left={0}
     >
       <a
@@ -27,6 +23,6 @@ export default function () {
       >
         <FontAwesomeIcon icon={faLinkedin} size="4x" />
       </a>
-    </Grid>
+    </div>
   );
 }

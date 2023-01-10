@@ -1,4 +1,6 @@
 import Grid from "@mui/material/Unstable_Grid2";
+import GradPhoto from "../assets/Grad_Photo.jpeg";
+import OrderPhoto from "../assets/OrderOfTheEngineer.jpg";
 
 export default function () {
   return (
@@ -17,7 +19,16 @@ export default function () {
 
       <p>
         I am a recent graduate of the University of Toledo with a degree in{" "}
-        <span className="special-text">Computer Science and Engineering.</span>
+        <span className="special-text">Computer Science and Engineering</span>{" "}
+        and an alumni of{" "}
+        <a href="https://triangle.org" className="special-text">
+          Triangle
+        </a>
+        .
+        <br />
+        <br />
+        <img src={GradPhoto} className="preview-image" width="50%" />
+        <img src={OrderPhoto} className="preview-image" width="50%" />
         <br />
         <br />I am currently in search of a full-time software developer
         position.
