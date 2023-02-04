@@ -12,7 +12,7 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text">Work Experience</h2>
+      <h2 className="special-text header-text hidden">Work Experience</h2>
       <br />
       <a
         href="https://cloud-cme.com"

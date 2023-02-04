@@ -40,7 +40,7 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text">Contact</h2>
+      <h2 className="special-text header-text hidden">Contact</h2>
       <br />
       <Grid id="contactForm" className="preview-list" columnGap={6} rowGap={2}>
         <a href="mailto:quinnhipp1@gmail.com">Send email</a>

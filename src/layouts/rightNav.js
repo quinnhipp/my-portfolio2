@@ -1,6 +1,5 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import { useState } from "react";
-//import { createTheme } from "@mui/material/styles";
 
 export default function () {
   const [isActive, setIsActive] = useState("#Home");
@@ -14,7 +13,7 @@ export default function () {
     >
       <a
         href="#Home"
-        className={isActive === "#Home" ? "nav-link-active" : "nav-link"}
+        className={isActive === "#Home" ? "nav-link active" : "nav-link"}
         onClick={() => setIsActive("#Home")}
       >
         Home
@@ -23,7 +22,7 @@ export default function () {
       <br />
       <a
         href="#AboutMe"
-        className={isActive === "#AboutMe" ? "nav-link-active" : "nav-link"}
+        className={isActive === "#AboutMe" ? "nav-link active" : "nav-link"}
         onClick={() => setIsActive("#AboutMe")}
       >
         About Me
@@ -32,7 +31,7 @@ export default function () {
       <br />
       <a
         href="#WorkExperience"
-        className={isActive === "#Work" ? "nav-link-active" : "nav-link"}
+        className={isActive === "#Work" ? "nav-link active" : "nav-link"}
         onClick={() => setIsActive("#Work")}
       >
         Work Experience
@@ -41,7 +40,7 @@ export default function () {
       <br />
       <a
         href="#TechnicalSkills"
-        className={isActive === "#Skills" ? "nav-link-active" : "nav-link"}
+        className={isActive === "#Skills" ? "nav-link active" : "nav-link"}
         onClick={() => setIsActive("#Skills")}
       >
         Technical Skills
@@ -50,7 +49,7 @@ export default function () {
       <br />
       <a
         href="#Education"
-        className={isActive === "#Education" ? "nav-link-active" : "nav-link"}
+        className={isActive === "#Education" ? "nav-link active" : "nav-link"}
         onClick={() => setIsActive("#Education")}
       >
         Education
@@ -59,7 +58,7 @@ export default function () {
       <br />
       <a
         href="#Projects"
-        className={isActive === "#Projects" ? "nav-link-active" : "nav-link"}
+        className={isActive === "#Projects" ? "nav-link active" : "nav-link"}
         onClick={() => setIsActive("#Projects")}
       >
         Projects
@@ -68,7 +67,7 @@ export default function () {
       <br />
       <a
         href="#References"
-        className={isActive === "#References" ? "nav-link-active" : "nav-link"}
+        className={isActive === "#References" ? "nav-link active" : "nav-link"}
         onClick={() => setIsActive("#References")}
       >
         References

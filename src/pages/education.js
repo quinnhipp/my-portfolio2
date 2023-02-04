@@ -12,7 +12,7 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text">Education</h2>
+      <h2 className="special-text header-text hidden">Education</h2>
       <a href="http://utoledo.edu" className="link large-text">
         University of Toledo
       </a>

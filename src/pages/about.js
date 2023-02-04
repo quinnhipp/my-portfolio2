@@ -14,14 +14,14 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text">About Me</h2>
+      <h2 className="special-text header-text hidden">About Me</h2>
       <br />
 
       <p>
         I am a recent graduate of the University of Toledo with a degree in{" "}
         <span className="special-text">Computer Science and Engineering</span>{" "}
         and an alumni of{" "}
-        <a href="https://triangle.org" className="special-text">
+        <a href="https://triangle.org" className="special-text" target="_blank">
           Triangle
         </a>
         .
