@@ -27,8 +27,18 @@ export default function () {
         .
         <br />
         <br />
-        <img src={GradPhoto} className="preview-image" width="50%" />
-        <img src={OrderPhoto} className="preview-image" width="50%" />
+        <img
+          src={GradPhoto}
+          alt="Me at graduation."
+          className="preview-image"
+          width="50%"
+        />
+        <img
+          src={OrderPhoto}
+          alt="Me at the University of Toledo Order of the Engineer Induction Ceremony"
+          className="preview-image"
+          width="50%"
+        />
         <br />
         <br />I am currently in search of a full-time software developer
         position.

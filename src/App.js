@@ -8,28 +8,13 @@ import Skills from "./pages/skills";
 import Education from "./pages/education";
 import Projects from "./pages/projects";
 import References from "./pages/references";
-import Contact from "./pages/contact";
+//import Contact from "./pages/contact";
 import RightNav from "./layouts/rightNav";
 import LeftSocials from "./layouts/leftSocials";
 import MenuDial from "./layouts/menuDial";
 import BottomSocials from "./layouts/bottomSocials";
-import { Container } from "semantic-ui-react";
-import { useEffect } from "react";
 
 function App() {
-  // document.getElementById("RightSide").addEventListener("wheel", function (e) {
-  //   e.preventDefault();
-  //   document.getElementById("Everything").scrollTop += e.deltaY * 10;
-  // });
-
-  // var el = document.getElementById("RightSide");
-  // if (el) {
-  //   el.addEventListener("wheel", function (e) {
-  //     e.preventDefault();
-  //     document.getElementById("Everything").scrollTop += e.deltaY * 10;
-  //   });
-  // }
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       console.log(entry);
