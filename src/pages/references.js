@@ -39,7 +39,7 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text hidden">References</h2>
+      <h2 className="special-text header-text">References</h2>
       <br />
       <PreviewList projects={projects} />
     </Grid>

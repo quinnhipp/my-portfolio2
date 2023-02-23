@@ -12,7 +12,34 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text hidden">Work Experience</h2>
+      <h2 className="special-text header-text">Work Experience</h2>
+      <br />
+      <a
+        href="https://www.norwalktruckers.net/norwalkhighschool_home.aspx"
+        rel="noreferrer"
+        target={"_blank"}
+        className="link"
+      >
+        <strong>Norwalk High School</strong>
+      </a>
+      <span className="special-text text">
+        <i>Long-Term Substitute Teacher</i>
+      </span>
+      <span className="text">December 2022 - Present</span>
+      <br />
+      <br />
+      <p className="text">
+        AP Computer Science, Computer Science Principles, Algebra II Teacher.
+        <br />
+        <br />
+        Utilized Java and Python to write programs.
+        <br />
+        <br />
+        Taught material aligned with the APCS curriculum.
+        <br />
+        <br />
+        Created lesson plans and differentiated instruction.
+      </p>
       <br />
       <a
         href="https://cloud-cme.com"
@@ -26,6 +53,8 @@ export default function () {
         <i>Software Developer Intern</i>
       </span>
       <span className="text">January 2020 - May 2022</span>
+      <br />
+      <br />
       <p className="text">
         Completed multiple project assignments in VB.net.
         <br />

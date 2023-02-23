@@ -12,7 +12,7 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text hidden">Education</h2>
+      <h2 className="special-text header-text">Education</h2>
       <a href="http://utoledo.edu" className="link large-text">
         University of Toledo
       </a>
@@ -22,7 +22,7 @@ export default function () {
       <p className="text"> Graduation Date: December 2022</p>
       <br />
       <p className="text">President's List: Summer 2020</p>
-      <p className="text">Dean's List: Spring 2021</p>
+      <p className="text">Dean's List: Spring 2021, Fall 2022</p>
     </Grid>
   );
 }

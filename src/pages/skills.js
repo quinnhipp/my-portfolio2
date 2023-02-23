@@ -13,7 +13,7 @@ export default function () {
       mdoffset={2.5}
       lgoffset={2.5}
     >
-      <h2 className="special-text header-text hidden">Technical Skills</h2>
+      <h2 className="special-text header-text">Technical Skills</h2>
       <Grid
         id="ChipGrid"
         className="Chip-Grid special-text"
