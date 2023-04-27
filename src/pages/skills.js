@@ -25,14 +25,7 @@ export default function () {
           color="primary"
           className="chip"
         />
-        <Chip
-          label="Assembly"
-          variant="outlined"
-          color="primary"
-          className="chip"
-        />
         <Chip label="C" variant="outlined" color="primary" className="chip" />
-        <Chip label="C#" variant="outlined" color="primary" className="chip" />
         <Chip label="C++" variant="outlined" color="primary" className="chip" />
         <Chip
           label="Java"
@@ -42,12 +35,6 @@ export default function () {
         />
         <Chip
           label="JavaScript"
-          variant="outlined"
-          color="primary"
-          className="chip"
-        />
-        <Chip
-          label="VB.net"
           variant="outlined"
           color="primary"
           className="chip"
