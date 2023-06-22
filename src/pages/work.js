@@ -25,7 +25,7 @@ export default function () {
       <span className="special-text text">
         <i>Long-Term Substitute Teacher</i>
       </span>
-      <span className="text">December 2022 - Present</span>
+      <span className="text">December 2022 - June 2023</span>
       <br />
       <br />
       <p className="text">
